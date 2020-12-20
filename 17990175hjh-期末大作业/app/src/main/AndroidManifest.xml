@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.life.good">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:name="org.litepal.LitePalApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+        <activity android:name="com.life.good.activity.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.life.good.activity.LoginActivity"/>
+        <activity android:name="com.life.good.activity.RegisterActivity"/>
+        <activity android:name="com.life.good.activity.OrderDetailActivity"/>
+        <activity android:name="com.life.good.activity.PersonActivity"/>
+        <activity android:name="com.life.good.activity.ChangeActivity"/>
+        <activity android:name="com.life.good.activity.MainActivity"/>
+        <activity android:name="com.life.good.activity.CarActivity"/>
+        <activity android:name="com.life.good.activity.OrderListActivity"/>
+        <activity android:name=".activity.GoodsDetail"/>
+    </application>
+</manifest>
